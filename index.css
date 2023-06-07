@@ -1,0 +1,458 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(20, 20, 20);
+}
+.nav{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 700px;
+    /* background-color: aqua; */
+    background-image:linear-gradient(0deg,rgba(0,0,0,.8) 0,transparent 60%,rgba(0,0,0,.8)),url(img/Background.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode:darken;
+}
+.nav #navBar{
+    display: flex;
+    position: relative;
+    top: 10px;
+    left: 30px;
+    justify-content: space-between;
+}
+.nav #navBar .logo h1{
+    font-size: 2.5rem;
+    color: red;
+    font-family: 'Poppins', sans-serif;
+}
+.nav #navBar .signUp{
+    width: 20%;
+    position: relative;
+    top:20px;
+    right: 80px;
+}
+.nav #navBar .signUp ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+.nav #navBar .signUp ul li{
+    list-style: none;
+    color: white;
+    padding: 3px 20px;
+    font-size: 2.2vh;
+    font-family: 'Poppins', sans-serif;
+    border: 1px solid white;
+    /* margin-left: 5px; */
+}
+.nav #navBar .signUp ul li:nth-child(1){
+    width: 35%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nav #navBar .signUp ul li:nth-child(2){
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+}
+.nav .content{
+    display: flex;
+    align-items: center;
+    height: 400px;
+    width: 50%;
+    position: relative;
+    top: 150px;
+    left:25%;
+    color: #fff;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+
+}
+.nav .content h2:nth-child(1){
+    font-size: 2.7rem;
+}
+.nav .content h2{
+    padding: 3px 30px;
+    font-size: 2rem;
+}
+.nav .content h3{
+    font-size: 2rem;
+    padding: 5px 30px;
+}
+.nav .content h4{
+    font-size: 1rem;
+    padding: 5px 30px;
+}
+.email{
+    position: relative;
+    top: 30px;
+    display: flex;
+    align-items: center;
+}
+.email #email{
+    padding: 15px 100px;
+}
+.email span{
+    border: 1px solid red;
+    padding: 10px 20px;
+    background-color: red;
+}
+.section1{
+    display: flex;
+    align-items: center;
+    position: relative;
+    /* top: 20px; */
+    background-color: black;
+    width: 100%;
+    height: 450px;
+    font-family: 'Poppins', sans-serif;
+    /* border: 1px solid red; */
+    margin: 10px 0;
+}
+.section1 .textfield{
+    width: 50%;
+    color: #fff;
+}
+.section1 .textfield h2{
+    padding: 10px 30px;
+    font-size: 3rem;
+}
+.section1 .textfield h3{
+    padding: 10px 30px;
+    font-size: 1.5rem;
+}
+.image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image img{
+    position: relative;
+    left: 170px;
+    width: 80%;
+    height: 350px;
+    z-index: 999;
+}
+.image video{
+    width: 470px;
+    height: 190px;
+    position: relative;
+    right: 234px;
+    bottom: 7px;
+}
+.imag1{
+    display: flex;
+    width: 45%;
+    height: 100%;
+    /* border:1px solid red; */
+    justify-content: center;
+    /* align-items: center; */
+}
+.imag1 .img1 img{
+    width: 90%;
+    height: 90%;
+}
+.imag1 .img1 .box{
+    height: 100px;
+    width: 70%;
+    box-shadow: 1px 1px 1px white;
+    border: 1px solid white;
+    position: relative;
+    top:-150px;
+    left:50px;
+    border-radius: 8px;
+    display: flex;
+    background-color: black;
+    align-items: center;
+    justify-content: space-between;
+}
+.imag1 .img1 .box img{
+    width: 20%;
+    z-index: -1;
+}
+.imag1 .img1 .box .text{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+.imag1 .img1 .box .text h4{
+    color: blue;
+    font-size: 1rem;  
+}
+.imag1 .img1 .box video{
+    width: 20%;
+}
+.section1 #video1 video{
+    width: 280px;
+    position: relative;
+    top: -60px;
+    right:210px;
+    
+
+}
+.section1 .img2{
+    width: 45%;
+}
+.section1 .img2 img{
+    width: 90%;
+}
+#section2{
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-around; */
+    color: #fff;
+}
+#section2 h2{
+    position: relative;
+    top: 50px;
+}
+#section2 .que{
+    position: relative;
+    top: 30px;
+    display: flex;
+    flex-direction: column;
+    height: 60%;
+    width: 80%;
+    /* border: 1px solid rebeccapurple; */
+    align-items: center;
+    justify-content: space-around;
+}
+#section2 .que .question{
+    display: flex;
+    color: #fff;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    width: 70%;
+    height: 12%;
+    background-color: grey;
+    /* border: 1px solid red; */
+}
+#section2 .que .question h1{
+    font-size: 1.5rem;
+}
+#section2 .email{
+    position: relative;
+    top: 90px;
+}
+
+#section2 .email #email{
+    padding: 30px 200px;
+}
+#section2 .email span{
+    border: 1px solid red;
+    padding: 26px 35px;
+    background-color: red;
+}
+#section3{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 100px;
+}
+#section3 h3{
+    margin-top: 50px;
+color: grey;
+}
+#section3 .footer{
+    display: flex;
+    align-content: space-between;
+    margin-top: 30px;
+    height: 60%;
+    width: 100%;
+    /* border: 1px solid red; */
+}
+#section3 .footer .footer1{
+    margin:0 10px;
+    width: 25%;
+    height: 100%;
+    /* border: 1px solid red; */
+}
+#section3 .footer .footer1 ul li{
+    margin: 10px 0;
+    list-style: none;
+    color: grey;
+}
+.lan{
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0;
+    color: white;
+    border: 1px solid grey;
+    padding: 20px 30px;
+}
+
+@media screen and (max-width:375px) {
+    .nav{
+        height: 60vh;
+        width: 85%;
+    }
+    .nav #navBar{
+        left: 0;
+        align-items: center;
+    }
+    .nav #navBar .logo h1{
+        font-size: 1.5rem;
+    }
+    .nav #navBar .signUp{
+        width: 50%;
+        position: relative;
+        top:0px;
+        right: 10px;
+    }
+    .nav #navBar .signUp ul{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .nav #navBar .signUp ul li{
+        list-style: none;
+        color: white;
+        padding: 3px 20px;
+        font-size: 1.3vh;
+        font-family: 'Poppins', sans-serif;
+        border: 1px solid white;
+        /* margin-left: 5px; */
+    }
+    .nav #navBar .signUp ul li:nth-child(1){
+        width: 50%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0;
+    }
+
+    .nav .content{
+        width: 100%;
+        top: 100px;
+        left: 10px;
+    }
+    .nav .content h2:nth-child(1){
+        font-size: 0.8rem;
+        padding: 1px 5px;
+    }
+    .nav .content h2{
+        padding: 1px 5px;
+        font-size: 1.1rem;
+    }
+    .nav .content h3{
+        font-size: 1rem;
+        padding: 1px 5px;
+    }
+    .nav .content h4{
+        font-size: 0.8rem;
+        padding: 1px 5px;
+    }
+    .email{
+        position: relative;
+        top: 10px;
+        display: flex;
+        align-items: center;
+    }
+    .email #email{
+        padding: 5px 4px;
+    }
+    .email span{
+        border: 1px solid red;
+        padding: 0;
+        background-color: red;
+    }
+    .section1{
+        flex-direction: column;
+        width: 85%;
+    }
+    .section1 .textfield{
+        width: 100%;
+    }
+    .section1 .textfield h2{
+        padding: 2px 5px;
+        font-size: 1rem;
+    }
+    .section1 .textfield h3{
+        padding: 2px 5px;
+        font-size: 1rem;
+    }
+    .image{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .image img{
+        position: relative;
+        left: 86px;
+        width: 89%;
+        height: 234px;
+        z-index: 999;
+    }
+    .image video{
+        
+    transform: translate(72px, 1px);
+    width: 211px;
+    height: 205px;
+    position: relative;
+    right: 234px;
+    bottom: 7px;
+
+    }
+    .imag1{
+        display: flex;
+        width: 45%;
+        height: 100%;
+        /* border:1px solid red; */
+        justify-content: center;
+        /* align-items: center; */
+    }
+    .imag1 .img1 img{
+        width: 90%;
+        height: 50%;
+    }
+    .imag1 .img1 .box{
+    height: 41px;
+    width: 141%;
+    }
+    .imag1 .img1 .box img{
+        width: 20%;
+        z-index: -1;
+    }
+    .imag1 .img1 .box .text{
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        color: white;
+    }
+    .imag1 .img1 .box .text h4{
+        color: blue;
+        font-size: 1rem;  
+    }
+    .imag1 .img1 .box video{
+        width: 20%;
+    }
+    .section1 #video1 video{
+        width: 280px;
+        position: relative;
+        top: -60px;
+        right:210px;
+        
+    
+    }
+    .section1 .img2{
+        width: 45%;
+    }
+    .section1 .img2 img{
+        width: 90%;
+    }
+
+    
+}
